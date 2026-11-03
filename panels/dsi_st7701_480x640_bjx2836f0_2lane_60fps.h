@@ -1,19 +1,19 @@
-#ifndef PANELS_DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_H
-#define PANELS_DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_H
+#ifndef PANELS_DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_H
+#define PANELS_DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_H
 
 #include "panel_platform.h"
 
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VACT 640
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VSA 8
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VBP 20
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VFP 20
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VACT 640
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VSA 8
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VBP 20
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VFP 20
 
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HACT 480
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HSA 10
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HBP 80
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HFP 80
-#define DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_FPS 60
-struct combo_dev_cfg_s dev_cfg_dsi_bjx2836f0_480x640_NULL_2lane_60fps = {
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HACT 480
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HSA 10
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HBP 80
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HFP 80
+#define DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_FPS 60
+struct combo_dev_cfg_s dev_cfg_dsi_st7701_480x640_bjx2836f0_2lane_60fps = {
     .devno = 0,
     .lane_id = { MIPI_TX_LANE_CLK, MIPI_TX_LANE_0, MIPI_TX_LANE_1, -1, -1 },
     .lane_pn_swap = { false, false, false, false, false },
@@ -21,23 +21,23 @@ struct combo_dev_cfg_s dev_cfg_dsi_bjx2836f0_480x640_NULL_2lane_60fps = {
     .video_mode = BURST_MODE,
     .output_format = OUT_FORMAT_RGB_24_BIT,
     .sync_info = {
-        .vid_hsa_pixels = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HSA,
-        .vid_hbp_pixels = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HBP,
-        .vid_hfp_pixels = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HFP,
-        .vid_hline_pixels = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_HACT,
-        .vid_vsa_lines = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VSA,
-        .vid_vbp_lines = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VBP,
-        .vid_vfp_lines = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VFP,
-        .vid_active_lines = DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_VACT,
+        .vid_hsa_pixels = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HSA,
+        .vid_hbp_pixels = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HBP,
+        .vid_hfp_pixels = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HFP,
+        .vid_hline_pixels = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_HACT,
+        .vid_vsa_lines = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VSA,
+        .vid_vbp_lines = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VBP,
+        .vid_vfp_lines = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VFP,
+        .vid_active_lines = DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_VACT,
         .vid_vsa_pos_polarity = true,
         .vid_hsa_pos_polarity = false,
     },
-    .pixel_clk = PIXEL_CLK(DSI_BJX2836F0_480X640_NULL_2LANE_60FPS),
+    .pixel_clk = PIXEL_CLK(DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS),
 };
 
-struct hs_settle_s hs_timing_cfg_dsi_bjx2836f0_480x640_NULL_2lane_60fps = { .prepare = 6, .zero = 32, .trail = 1 };
+struct hs_settle_s hs_timing_cfg_dsi_st7701_480x640_bjx2836f0_2lane_60fps = { .prepare = 6, .zero = 32, .trail = 1 };
 
-struct dsc_instr dsi_init_cmds_dsi_bjx2836f0_480x640_NULL_2lane_60fps[] = {
+struct dsc_instr dsi_init_cmds_dsi_st7701_480x640_bjx2836f0_2lane_60fps[] = {
     DSI_CMD_TYPE(0, 0x29, 0xFF, 0x77, 0x01, 0x00, 0x00, 0x13),
     DSI_CMD_TYPE(0, 0x15, 0xEF, 0x08),
     DSI_CMD_TYPE(0, 0x29, 0xFF, 0x77, 0x01, 0x00, 0x00, 0x10),
@@ -91,4 +91,4 @@ struct dsc_instr dsi_init_cmds_dsi_bjx2836f0_480x640_NULL_2lane_60fps[] = {
 
 #else
 #error "MIPI_TX_PARAM multi-delcaration!!"
-#endif // PANELS_DSI_BJX2836F0_480X640_NULL_2LANE_60FPS_H
+#endif // PANELS_DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS_H

@@ -24,20 +24,30 @@ config BT656_PT1000K_NULL_NULL_NULL
     help
       "y" Config bt656_pt1000k_NULL_NULL_NULL.
 
+config BT656_TP2803_NULL_NULL_NULL
+    bool "bt656_tp2803_NULL_NULL_NULL"
+    help
+      "y" Config bt656_tp2803_NULL_NULL_NULL.
+
 config DSI_3AML069LP01G_600X1024_NULL_4LANE_60FPS
     bool "dsi_3aml069lp01g_600x1024_NULL_4lane_60fps"
     help
       "y" Config dsi_3aml069lp01g_600x1024_NULL_4lane_60fps.
 
-config DSI_BJX2836F0_480X640_NULL_2LANE_60FPS
-    bool "dsi_bjx2836f0_480x640_NULL_2lane_60fps"
+config DSI_GC9503CV_480X800_NULL_2LANE_60FPS
+    bool "dsi_gc9503cv_480x800_NULL_2lane_60fps"
     help
-      "y" Config dsi_bjx2836f0_480x640_NULL_2lane_60fps.
+      "y" Config dsi_gc9503cv_480x800_NULL_2lane_60fps.
 
 config DSI_GM8775C_1920X1080_NULL_4LANE_60FPS
     bool "dsi_gm8775c_1920x1080_NULL_4lane_60fps"
     help
       "y" Config dsi_gm8775c_1920x1080_NULL_4lane_60fps.
+
+config DSI_HX8394_720X1280_NULL_2LANE_60FPS
+    bool "dsi_hx8394_720x1280_NULL_2lane_60fps"
+    help
+      "y" Config dsi_hx8394_720x1280_NULL_2lane_60fps.
 
 config DSI_HX8394_720X1280_NULL_4LANE_60FPS
     bool "dsi_hx8394_720x1280_NULL_4lane_60fps"
@@ -99,15 +109,30 @@ config DSI_OTA7290B_440X1920_NULL_4LANE_60FPS
     help
       "y" Config dsi_ota7290b_440x1920_NULL_4lane_60fps.
 
+config DSI_ST7102_480X800_EQT430BYZ357G_2LANE_60FPS
+    bool "dsi_st7102_480x800_eqt430byz357g_2lane_60fps"
+    help
+      "y" Config dsi_st7102_480x800_eqt430byz357g_2lane_60fps.
+
 config DSI_ST7701_480X640_NULL_2LANE_60FPS
     bool "dsi_st7701_480x640_NULL_2lane_60fps"
     help
       "y" Config dsi_st7701_480x640_NULL_2lane_60fps.
 
+config DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS
+    bool "dsi_st7701_480x640_bjx2836f0_2lane_60fps"
+    help
+      "y" Config dsi_st7701_480x640_bjx2836f0_2lane_60fps.
+
 config DSI_ST7701_480X800_NULL_2LANE_60FPS
     bool "dsi_st7701_480x800_NULL_2lane_60fps"
     help
       "y" Config dsi_st7701_480x800_NULL_2lane_60fps.
+
+config DSI_ST7701S_480X480_NULL_2LANE_60FPS
+    bool "dsi_st7701s_480x480_NULL_2lane_60fps"
+    help
+      "y" Config dsi_st7701s_480x480_NULL_2lane_60fps.
 
 config DSI_ST7703_640X480_NULL_2LANE_60FPS
     bool "dsi_st7703_640x480_NULL_2lane_60fps"

@@ -40,6 +40,13 @@ static struct panel_desc_s panel_desc = { .panel_name = "HX8394-720x1280-NULL-4l
     .hs_timing_cfg = &hs_timing_cfg_dsi_hx8394_720x1280_NULL_4lane_60fps,
     .dsi_init_cmds = dsi_init_cmds_dsi_hx8394_720x1280_NULL_4lane_60fps,
     .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_hx8394_720x1280_NULL_4lane_60fps) };
+#elif CONFIG_DSI_HX8394_720X1280_NULL_2LANE_60FPS
+#include "panels/dsi_hx8394_720x1280_NULL_2lane_60fps.h"
+static struct panel_desc_s panel_desc = { .panel_name = "HX8394-720x1280-NULL-2lane-60fps",
+    .dev_cfg = &dev_cfg_dsi_hx8394_720x1280_NULL_2lane_60fps,
+    .hs_timing_cfg = &hs_timing_cfg_dsi_hx8394_720x1280_NULL_2lane_60fps,
+    .dsi_init_cmds = dsi_init_cmds_dsi_hx8394_720x1280_NULL_2lane_60fps,
+    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_hx8394_720x1280_NULL_2lane_60fps) };
 #elif CONFIG_DSI_ILI9881C_720X1280_NULL_4LANE_60FPS
 #include "panels/dsi_ili9881c_720x1280_NULL_4lane_60fps.h"
 static struct panel_desc_s panel_desc = { .panel_name = "ILI9881C-720x1280-NULL-4lane-60fps",
@@ -96,6 +103,13 @@ static struct panel_desc_s panel_desc = { .panel_name = "3AML069LP01G-600x1024-N
     .hs_timing_cfg = &hs_timing_cfg_dsi_3aml069lp01g_600x1024_NULL_4lane_60fps,
     .dsi_init_cmds = dsi_init_cmds_dsi_3aml069lp01g_600x1024_NULL_4lane_60fps,
     .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_3aml069lp01g_600x1024_NULL_4lane_60fps) };
+#elif CONFIG_DSI_ST7701S_480X480_NULL_2LANE_60FPS
+#include "panels/dsi_st7701s_480x480_NULL_2lane_60fps.h"
+static struct panel_desc_s panel_desc = { .panel_name = "ST7701S-480x480-NULL-2lane-60fps",
+    .dev_cfg = &dev_cfg_dsi_st7701s_480x480_NULL_2lane_60fps,
+    .hs_timing_cfg = &hs_timing_cfg_dsi_st7701s_480x480_NULL_2lane_60fps,
+    .dsi_init_cmds = dsi_init_cmds_dsi_st7701s_480x480_NULL_2lane_60fps,
+    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_st7701s_480x480_NULL_2lane_60fps) };
 #elif CONFIG_DSI_ST7701_480X800_NULL_2LANE_60FPS
 #include "panels/dsi_st7701_480x800_NULL_2lane_60fps.h"
 static struct panel_desc_s panel_desc = { .panel_name = "ST7701-480x800-NULL-2lane-60fps",
@@ -103,6 +117,13 @@ static struct panel_desc_s panel_desc = { .panel_name = "ST7701-480x800-NULL-2la
     .hs_timing_cfg = &hs_timing_cfg_dsi_st7701_480x800_NULL_2lane_60fps,
     .dsi_init_cmds = dsi_init_cmds_dsi_st7701_480x800_NULL_2lane_60fps,
     .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_st7701_480x800_NULL_2lane_60fps) };
+#elif CONFIG_DSI_ST7102_480X800_EQT430BYZ357G_2LANE_60FPS
+#include "panels/dsi_st7102_480x800_eqt430byz357g_2lane_60fps.h"
+static struct panel_desc_s panel_desc = { .panel_name = "ST7102-480x800-EQT430BYZ357G-2lane-60fps",
+    .dev_cfg = &dev_cfg_dsi_st7102_480x800_eqt430byz357g_2lane_60fps,
+    .hs_timing_cfg = &hs_timing_cfg_dsi_st7102_480x800_eqt430byz357g_2lane_60fps,
+    .dsi_init_cmds = dsi_init_cmds_dsi_st7102_480x800_eqt430byz357g_2lane_60fps,
+    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_st7102_480x800_eqt430byz357g_2lane_60fps) };
 #elif CONFIG_DSI_ST7703_640X480_NULL_2LANE_60FPS
 #include "panels/dsi_st7703_640x480_NULL_2lane_60fps.h"
 static struct panel_desc_s panel_desc = { .panel_name = "ST7703-640x480-NULL-2lane-60fps",
@@ -117,13 +138,13 @@ static struct panel_desc_s panel_desc = { .panel_name = "JD9161C-480x640-NULL-2l
     .hs_timing_cfg = &hs_timing_cfg_dsi_jd9161c_480x640_NULL_2lane_60fps,
     .dsi_init_cmds = dsi_init_cmds_dsi_jd9161c_480x640_NULL_2lane_60fps,
     .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_jd9161c_480x640_NULL_2lane_60fps) };
-#elif CONFIG_DSI_BJX2836F0_480X640_NULL_2LANE_60FPS
-#include "panels/dsi_bjx2836f0_480x640_NULL_2lane_60fps.h"
+#elif CONFIG_DSI_ST7701_480X640_BJX2836F0_2LANE_60FPS
+#include "panels/dsi_st7701_480x640_bjx2836f0_2lane_60fps.h"
 static struct panel_desc_s panel_desc = { .panel_name = "BJX2836F0-480x640",
-    .dev_cfg = &dev_cfg_dsi_bjx2836f0_480x640_NULL_2lane_60fps,
-    .hs_timing_cfg = &hs_timing_cfg_dsi_bjx2836f0_480x640_NULL_2lane_60fps,
-    .dsi_init_cmds = dsi_init_cmds_dsi_bjx2836f0_480x640_NULL_2lane_60fps,
-    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_bjx2836f0_480x640_NULL_2lane_60fps) };
+    .dev_cfg = &dev_cfg_dsi_st7701_480x640_bjx2836f0_2lane_60fps,
+    .hs_timing_cfg = &hs_timing_cfg_dsi_st7701_480x640_bjx2836f0_2lane_60fps,
+    .dsi_init_cmds = dsi_init_cmds_dsi_st7701_480x640_bjx2836f0_2lane_60fps,
+    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_st7701_480x640_bjx2836f0_2lane_60fps) };
 #elif CONFIG_DSI_ILI9488_320X480_NULL_1LANE_60FPS
 #include "panels/dsi_ili9488_320x480_NULL_1lane_60fps.h"
 static struct panel_desc_s panel_desc = { .panel_name = "ILI9488-320x480-NULL-1lane-60fps",
@@ -145,6 +166,13 @@ static struct panel_desc_s panel_desc = { .panel_name = "GM8775C-1920x1080-NULL-
     .hs_timing_cfg = &hs_timing_cfg_dsi_gm8775c_1920x1080_NULL_4lane_60fps,
     .dsi_init_cmds = dsi_init_cmds_dsi_gm8775c_1920x1080_NULL_4lane_60fps,
     .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_gm8775c_1920x1080_NULL_4lane_60fps) };
+#elif CONFIG_DSI_GC9503CV_480X800_NULL_2LANE_60FPS
+#include "panels/dsi_gc9503cv_480x800_NULL_2lane_60fps.h"
+static struct panel_desc_s panel_desc = { .panel_name = "GC9503CV-480x800-NULL-2lane-60fps",
+    .dev_cfg = &dev_cfg_dsi_gc9503cv_480x800_NULL_2lane_60fps,
+    .hs_timing_cfg = &hs_timing_cfg_dsi_gc9503cv_480x800_NULL_2lane_60fps,
+    .dsi_init_cmds = dsi_init_cmds_dsi_gc9503cv_480x800_NULL_2lane_60fps,
+    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_gc9503cv_480x800_NULL_2lane_60fps) };
 #elif CONFIG_DSI_HX8399_1080X1920_NULL_4LANE_60FPS
 #include "panels/dsi_hx8399_1080x1920_NULL_4lane_60fps.h"
 static struct panel_desc_s panel_desc = { .panel_name = "HX8399-1080x1920-NULL-4lane-60fps",
@@ -239,15 +267,21 @@ static struct panel_desc_s panel_desc = {
     .bt_attr = &stpt1000kbt656cfg,
 #endif
 };
+#elif CONFIG_BT656_TP2803_NULL_NULL_NULL
+#include "panels/bt656_tp2803_NULL_NULL_NULL.h"
+static struct panel_desc_s panel_desc = {
+    .panel_name = "TP2803-BT656",
+#ifndef __UBOOT__
+    .bt_attr = &stTP2803Cfg,
+#endif
+};
 #else
 #include "panels/dsi_hx8394_720x1280_NULL_4lane_60fps.h"
-static struct panel_desc_s panel_desc = {
-    .panel_name = "HX8394-720x1280-NULL-4lane-60fps",
+static struct panel_desc_s panel_desc = { .panel_name = "HX8394-720x1280-NULL-4lane-60fps",
     .dev_cfg = &dev_cfg_dsi_hx8394_720x1280_NULL_4lane_60fps,
     .hs_timing_cfg = &hs_timing_cfg_dsi_hx8394_720x1280_NULL_4lane_60fps,
     .dsi_init_cmds = dsi_init_cmds_dsi_hx8394_720x1280_NULL_4lane_60fps,
-    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_hx8394_720x1280_NULL_4lane_60fps)
-};
+    .dsi_init_cmds_size = ARRAY_SIZE(dsi_init_cmds_dsi_hx8394_720x1280_NULL_4lane_60fps) };
 #endif
 
 #endif
